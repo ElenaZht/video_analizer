@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+/*.App {*/
+/*  text-align: center;*/
+/*}*/
+.main{
+  display: grid;
+  height: 100vmin;
+  width: 100vmax;
+  grid-template-rows: .5fr 3fr 2fr;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-areas:
+    'header header ads'
+  'video_player settings ads'
+  'diagrams settings ads'
+;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid red;
+  grid-area: header
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.video_player{
+  border: solid mediumvioletred;
+  grid-area: video_player;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  padding-left: 3%;
+}
+.diagrams{
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: solid orange;
+  grid-area: diagrams;
 }
+.settings{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid black;
+  grid-area: settings;
+}
+.ads{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid lightskyblue;
+  grid-area: ads;
 
-.App-link {
-  color: #61dafb;
 }
+#preview{
+  background-color: lightgray;
+  display: flex;
+  align-self: flex-start;
+  margin-bottom: 3%;
+}
+.controls{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+.treshold{
+  flex-direction: column;
+}
+/*.App-logo {*/
+/*  height: 40vmin;*/
+/*  pointer-events: none;*/
+/*}*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*  .App-logo {*/
+/*    animation: App-logo-spin infinite 20s linear;*/
+/*  }*/
+/*}*/
+
+/*.App-header {*/
+/*  background-color: #282c34;*/
+/*  min-height: 100vh;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  font-size: calc(10px + 2vmin);*/
+/*  color: white;*/
+/*}*/
+
+/*.App-link {*/
+/*  color: #61dafb;*/
+/*}*/
+
+/*@keyframes App-logo-spin {*/
+/*  from {*/
+/*    transform: rotate(0deg);*/
+/*  }*/
+/*  to {*/
+/*    transform: rotate(360deg);*/
+/*  }*/
+/*}*/
