@@ -1,0 +1,32 @@
+.vp_main{
+    border: solid mediumvioletred;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#preview{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-self: center;
+    margin-bottom: 3%;
+}
+.no_file {
+    background-image: url('../media/images/no_file.png');
+}
+.loaded_file{
+    background-image: url('../media/images/loaded_file.png');
+}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: center;
+}
+.treshold{
+    flex-direction: column;
+}
